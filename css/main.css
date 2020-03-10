@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  box-sizing:border-box;
+}
+
+html,
+body {
+  height:100%;
+  background-color: #DCCDAC;
+}
+
+.wrapper {
+  width:60%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 0 5%;
+}
+
+p {
+  line-height: 1.8;
+  padding: 3rem 0rem;
+}
+
+/*STEP ONE
+Using an appropriate unit of measurement, change the default sizes of your headings and body paragraph and the line-height of your body text. Ensure that the size you choose is appropriate for readability.*/
+html {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-top: 0rem;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 0rem;
+}
+
+p, ol, ul {
+  font-size: 2rem;
+}
+
+footer p {
+  font-size: 1.4rem;
+}
+
+/* STEP TWO - Include interesting fonts */
+/* Choose a Google Font and a web font that work well together. Include both font selections using CSS (i.e. one for headings, one for body copy). */
+@font-face {
+    font-family: 'aliceregular';
+    src: url('../assets/fonts/Alice-Regular-webfont.eot');
+    src: url('../assets/fonts/Alice-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/Alice-Regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/Alice-Regular-webfont.woff') format('woff'),
+         url('../assets/fonts/Alice-Regular-webfont.ttf') format('truetype'),
+         url('../assets/fonts/Alice-Regular-webfont.svg#aliceregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  font-family: 'aliceregular', serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* STEP THREE *  - Style the links /
+/* Style the links included in the first paragraph in an interesting and creative way. Remember to style them in the appropriate order and follow best practices */
+a {
+  outline: none;
+  text-decoration: none;
+  font-weight: bolder;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #087A12;
+  border-bottom: 2px solid;
+}
+
+a:visited {
+  color: #686F69;
+}
+
+a:focus {
+  border-bottom: 2px solid;
+  color: #A7D8AB;
+}
+
+a:hover {
+  border-bottom: 2px solid;
+  background-color: #A7D8AB;
+}
+
+a:active {
+  background: #265301;
+  color: #265301;
+}
+
+/* STEP FOUR - Style the list */
+/* - Style the list so that it maintains vertical rhythym with other content on the page
+   - Give the unordered list square bullets
+  -  Give the ordered list lower alphabetical bullets
+  - Add any other creative touches to style the list and embedded list */
+
+/*  maintains vertical rhythym  */
+ol {
+  line-height: 1.8;
+}
+
+/* Give the ordered list lower alphabetical bullets */
+ol li {
+  list-style-type: lower-alpha;
+  list-style-position: inside;
+}
+
+/* Give the unordered list square bullets */
+ul li {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+/* STEP FIVE - Zip up your code and submit on BB! This is Module 3 lab! If you want to take extra time to complete, it's due on March 11th @ 11:59pm */
